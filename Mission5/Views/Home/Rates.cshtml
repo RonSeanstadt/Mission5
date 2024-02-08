@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Rates";
+}
+<h1 style="text-align: center">@ViewData["Title"]</h1>
+
+<h3 style="text-align: center">Below you can calculate the cost of drum lessons. In these lessons, I am willing to help you with the basics, along with how to play some of your favorite songs!</h3>
+<br />
+
+<div style="text-align: center">
+    <b><label for="hours">Enter Number of Hours:</label></b>
+    <input type="number" id="hours" min="0">
+</div>
+<br />
+<div style="text-align: center">
+    <b><label for="hourlyRate">Hourly Rate ($):</label></b>
+    <input type="text" id="hourlyRate" value="25" readonly>
+</div>
+<br />
+<br />
+<button onclick="calculateTotal()" id="btnCalcTotal" style="display: block; margin: 0 auto;">Calculate Total</button>
+<br />
+<br />
+<div style="text-align: center">
+    <b><label for="total">Total:</label></b>
+    <input type="text" id="total" readonly>
+</div>
+<br />
